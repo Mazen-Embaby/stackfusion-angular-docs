@@ -1,0 +1,14 @@
+<div
+  class="dropdown"
+  (click)="menu.toggle()"
+  tabindex="0"
+  (keydown.enter)="menu.toggle()"
+  (keydown.space)="menu.toggle()"
+  (keydown.esc)="menu.close()">
+  <ng-content select="[ngDropdownTrigger]"></ng-content>
+  @if (menu.isOpen) {
+    <div class="dropdown-menu">
+      <ng-content></ng-content>
+    </div>
+  }
+</div>

@@ -1,0 +1,9 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-activity-log',
+  imports: [],
+  templateUrl: './activity-log.component.html',
+  styles: ``,
+})
+export class ActivityLogComponent {}

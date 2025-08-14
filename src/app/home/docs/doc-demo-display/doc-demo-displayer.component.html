@@ -1,0 +1,11 @@
+<div class="flex grow flex-col rounded-t-xl border border-gray-200 dark:border-gray-700">
+  <div
+    class="flex flex-row items-center justify-between rounded-t-xl border-b border-b-gray-200 bg-gray-50 p-1 dark:border-b-gray-700 dark:bg-gray-800 dark:text-gray-400">
+    <span> </span>
+
+    <app-toggle-dark-mode></app-toggle-dark-mode>
+  </div>
+  <div [attr.data-theme]="themeMode()" class="bg-white p-6 dark:bg-gray-900">
+    <ng-content />
+  </div>
+</div>

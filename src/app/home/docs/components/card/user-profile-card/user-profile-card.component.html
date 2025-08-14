@@ -1,0 +1,52 @@
+<div class="w-full max-w-sm rounded-lg border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800">
+  <div class="flex justify-end px-4 pt-4">
+    <button
+      [ngpMenuTrigger]="dropdownMenu"
+      class="inline-block rounded-lg p-1.5 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+      type="button">
+      <span class="sr-only">Open dropdown</span>
+      <svg class="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3">
+        <path
+          d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+      </svg>
+    </button>
+    <!-- Dropdown menu -->
+    <ng-template #dropdownMenu>
+      <div sfDropDownBtn>
+        <div
+          sfDropDownContent
+          class="z-10 w-44 list-none divide-y divide-gray-100 rounded-lg bg-white text-base shadow-sm dark:bg-gray-700">
+          <ul class="py-2" aria-labelledby="dropdownButton">
+            <li sfDropDownItem>Edit</li>
+            <li sfDropDownItem>Export Data</li>
+            <li
+              sfDropDownItem
+              class="text-red-600 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">
+              Delete
+            </li>
+          </ul>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+  <div class="flex flex-col items-center pb-10">
+    <img
+      class="mb-3 h-24 w-24 rounded-full shadow-lg"
+      src="./assets/img/avatar/photo-1472099645785-5658abf4ff4e.jpg"
+      alt="Bonnie image" />
+    <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+    <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
+    <div class="mt-4 flex md:mt-6">
+      <a
+        href="#"
+        class="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >Add friend</a
+      >
+      <a
+        href="#"
+        class="ms-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
+        >Message</a
+      >
+    </div>
+  </div>
+</div>

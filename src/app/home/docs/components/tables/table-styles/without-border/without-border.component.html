@@ -1,0 +1,30 @@
+<div class="relative overflow-x-auto">
+  <table class="w-full text-left text-sm text-gray-500 rtl:text-right dark:text-gray-400">
+    <thead class="text-xs uppercase text-gray-900 dark:text-gray-400">
+      <tr>
+        <th scope="col" class="px-6 py-3">Product name</th>
+        <th scope="col" class="px-6 py-3">Color</th>
+        <th scope="col" class="px-6 py-3">Category</th>
+        <th scope="col" class="px-6 py-3">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (product of products; track $index) {
+        <tr class="bg-white dark:bg-gray-800">
+          <th scope="row" class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">
+            {{ product.name }}
+          </th>
+          <td class="px-6 py-4">
+            {{ product.color }}
+          </td>
+          <td class="px-6 py-4">
+            {{ product.category }}
+          </td>
+          <td class="px-6 py-4">
+            {{ product.price | currency }}
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>
