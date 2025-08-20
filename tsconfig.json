@@ -3,12 +3,18 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
       "@ng-doc/generated": [
         "./ng-doc/stackfusion-angular-docs/index.ts"
       ],
       "@ng-doc/generated/*": [
         "./ng-doc/stackfusion-angular-docs/*"
+      ],
+      "@sf/*": [
+        "./src/@sf/*/public-api.ts",
+        "./src/@sf/*/index.ts",
+        "./src/@sf/*"
       ]
     },
     "strict": true,

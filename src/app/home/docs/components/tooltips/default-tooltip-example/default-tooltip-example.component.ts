@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TooltipModule } from '../../../../../../@sf/tooltip';
+import { TooltipModule } from '@sf/tooltip';
 
 @Component({
   selector: 'app-default-tooltip-example',

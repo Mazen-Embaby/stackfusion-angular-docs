@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AccordionModule } from '../../../../../../@sf/accordion';
+import { AccordionModule } from '@sf/accordion';
 
 @Component({
   selector: 'app-default-accordion',

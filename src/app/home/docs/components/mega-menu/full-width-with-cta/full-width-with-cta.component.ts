@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgpMenuTrigger } from 'ng-primitives/menu';
-import { Dropdown, DropdownContent } from '../../../../../../@sf/dropdown';
+import { Dropdown, DropdownContent } from '@sf/dropdown';
 
 @Component({
   selector: 'app-full-width-with-cta',

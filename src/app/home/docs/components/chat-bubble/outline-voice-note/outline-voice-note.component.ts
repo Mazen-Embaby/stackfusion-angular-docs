@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgpMenuTrigger } from 'ng-primitives/menu';
-import { Dropdown, DropdownContent, DropdownItem } from '../../../../../../@sf/dropdown';
+import { Dropdown, DropdownContent, DropdownItem } from '@sf/dropdown';
 
 @Component({
   selector: 'app-outline-voice-note',
