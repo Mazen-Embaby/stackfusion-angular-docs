@@ -31,13 +31,13 @@ git clone git@github.com:Mazen-Embaby/stackfusion-angular-starterkit.git
 - Use [pnpm](https://pnpm.io/installation) (recommended)
 
   ```bash
-  cd angular-tailwind-nodejs && pnpm install
+  cd stackfusion-angular-starterkit && pnpm install
   ```
 
 - Use [nodejs](https://nodejs.org/en/download)
 
   ```bash
-  cd angular-tailwind-nodejs && node install
+  cd stackfusion-angular-starterkit && node install
   ```
 
 ### Back-End
