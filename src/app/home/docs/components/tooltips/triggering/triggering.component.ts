@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { TooltipModule } from '@sf/tooltip';
+import { Tooltip } from '@sf/tooltip';
 
 @Component({
   selector: 'app-triggering',
-  imports: [TooltipModule],
+  imports: [Tooltip],
   templateUrl: './triggering.component.html',
   styles: ``,
 })

@@ -1,0 +1,29 @@
+<div class="mt-8 space-y-4">
+
+    <!-- Custom delay -->
+    <div class="flex items-center space-x-4">
+        <button sfTooltip="This tooltip has a custom delay" [sfTooltipShowDelay]="1000" [sfTooltipHideDelay]="500"
+            class="rounded-lg bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700">
+            Custom Delay (1s show, 0.5s hide)
+        </button>
+    </div>
+
+    <!-- Custom class -->
+    <div class="flex items-center space-x-4">
+        <button sfTooltip="This tooltip has custom styling"
+            sfTooltipClass="bg-red-500 text-white border-2 border-red-700"
+            class="rounded-lg bg-red-600 px-4 py-2 text-white hover:bg-red-700">
+            Custom Styling
+        </button>
+    </div>
+
+    <!-- Dynamic tooltip -->
+    <div class="flex items-center space-x-4">
+        <button [sfTooltip]="dynamicTooltipText" class="rounded-lg bg-teal-600 px-4 py-2 text-white hover:bg-teal-700">
+            Dynamic Tooltip
+        </button>
+        <button (click)="toggleTooltipText()" class="rounded-lg bg-gray-600 px-4 py-2 text-white hover:bg-gray-700">
+            Change Text
+        </button>
+    </div>
+</div>

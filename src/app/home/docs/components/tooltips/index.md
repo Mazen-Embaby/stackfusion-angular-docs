@@ -38,6 +38,18 @@ keyword: TooltipsPage
 
 ```
 
+## Advanced Tooltip
+
+{{ NgDocActions.demo('TooltipAdvancedStyleComponent', {container: false}) }}
+
+```angular-html file="./tooltip-advanced-style/tooltip-advanced-style.component.html" group="TooltipAdvancedStyleComponent" name="html"
+
+```
+
+```angular-ts file="./tooltip-advanced-style/tooltip-advanced-style.component.ts" group="TooltipAdvancedStyleComponent" name="typescript"
+
+```
+
 ## Triggering
 
 {{ NgDocActions.demo('TriggeringComponent', {container: false}) }}

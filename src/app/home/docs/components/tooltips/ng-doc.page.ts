@@ -5,6 +5,7 @@ import { DefaultTooltipExampleComponent } from './default-tooltip-example/defaul
 import { PlacementComponent } from './placement/placement.component';
 import { TooltipStylesComponent } from './tooltip-styles/tooltip-styles.component';
 import { TriggeringComponent } from './triggering/triggering.component';
+import { TooltipAdvancedStyleComponent } from './tooltip-advanced-style/tooltip-advanced-style.component';
 
 const TooltipsPage: NgDocPage = {
   title: `Tooltips`,
@@ -14,6 +15,7 @@ const TooltipsPage: NgDocPage = {
   demos: {
     DefaultTooltipExampleComponent,
     TooltipStylesComponent,
+    TooltipAdvancedStyleComponent,
     PlacementComponent,
     TriggeringComponent,
   },

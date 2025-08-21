@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
-import { TooltipModule } from '@sf/tooltip';
+import { Tooltip } from '@sf/tooltip';
 
 @Component({
   selector: 'app-placement',
-  imports: [TooltipModule],
+  imports: [Tooltip],
   templateUrl: './placement.component.html',
   styles: ``,
 })
-export class PlacementComponent {}
+export class PlacementComponent {
+  dynamicTooltipText = 'Initial tooltip text';
+
+  toggleTooltipText(): void {
+    this.dynamicTooltipText =
+      this.dynamicTooltipText === 'Initial tooltip text' ? 'Changed tooltip text!' : 'Initial tooltip text';
+  }
+}
